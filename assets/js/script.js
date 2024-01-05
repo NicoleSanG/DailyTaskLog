@@ -27,8 +27,13 @@ function dayOfMonthSuffix(day) {
 // Working hours (9am-5pm) to be displayed in rows
 var currentHour = dayjs().hour();
 
-// Function to to display each hour in a 12hr AM/PM format
+// Function to to display each hour in a 12h AM/PM format
 function formatHour(hour) {
     return dayjs().hour(hour).format('h A');
+}
+//Function that given the time, returns the corresponding color class 'past', 'present', 'future' according to CSS.
+function getColorClass(hour) {
+    var currentHour = dayjs().hour();
+    return hour < currentHour ? 'past' : hour > currentHour ? 'future' : 'present';
 }
 
