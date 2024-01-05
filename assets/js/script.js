@@ -36,4 +36,15 @@ function getColorClass(hour) {
     var currentHour = dayjs().hour();
     return hour < currentHour ? 'past' : hour > currentHour ? 'future' : 'present';
 }
-
+//For loop to create a row for each hour from 9am to 5pm
+for (var hour = 9; hour <= 17; hour++) {
+    var rowClass = getColorClass(hour);
+    // Add rows to container
+    $('.container').append(`<div class="row time-block ${rowClass}">
+      <div class="col-2 hour pt-3">${formatHour(hour)}</div>
+      <textarea class="col"></textarea>
+      <button class="saveBtn col-2">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>`);
+}
