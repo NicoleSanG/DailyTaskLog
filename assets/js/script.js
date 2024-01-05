@@ -24,3 +24,11 @@ function dayOfMonthSuffix(day) {
     }
 }
 
+// Working hours (9am-5pm) to be displayed in rows
+var currentHour = dayjs().hour();
+
+// Function to to display each hour in a 12hr AM/PM format
+function formatHour(hour) {
+    return dayjs().hour(hour).format('h A');
+}
+
