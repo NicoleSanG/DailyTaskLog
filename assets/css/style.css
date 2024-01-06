@@ -1,15 +1,18 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #ffe8e8;
 }
-
+h1{
+  color: #850E35;
+}
 textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 1px solid #f6416c;
   padding: 10px;
 }
 
@@ -18,7 +21,7 @@ header {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #f6416c;
   padding: 60px;
 }
 
@@ -39,22 +42,22 @@ header {
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: #f6416c;
+  border-top: 1px dashed #f6416c;
 }
 
 .past {
-  background-color: red;
+  background-color: #ff9292;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ffb4b4;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #ffdcdc;
   color: white;
 }
 
@@ -62,8 +65,8 @@ header {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-color: #f6416c;
+  color: #ffe8e8;
 }
 
 .saveBtn i:hover {
