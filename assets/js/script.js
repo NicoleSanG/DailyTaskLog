@@ -48,3 +48,20 @@ for (var hour = 9; hour <= 17; hour++) {
       </button>
     </div>`);
 }
+// Load saved event from local storage
+var savedEvent = localStorage.getItem(formatHour(hour));
+if (savedEvent) {
+    $(`.container textarea.${rowClass}`).last().val(savedEvent);
+}
+// Add event listener to save button and save it in the local storage
+$('.saveBtn').on('click', function () {
+    var key = $(this).siblings('.hour').text();
+    var value = $(this).siblings('textarea').val();
+    localStorage.setItem(key, value);
+    window.alert('Your task has been added to localStorage!');
+});
+// Iterates over each textarea, gets the associated time, and restores the value from local storage
+$('textarea').each(function () {
+    var key = $(this).siblings('.hour').text();
+    $(this).val(localStorage.getItem(key));
+});
