@@ -47,17 +47,17 @@ header {
 }
 
 .past {
+  background-color:  #ffb4b4;
+  color: white;
+}
+
+.present { 
+  background-color: #EE6983;
+  color: white;
+}
+
+.future { 
   background-color: #ff9292;
-  color: white;
-}
-
-.present {
-  background-color: #ffb4b4;
-  color: white;
-}
-
-.future {
-  background-color: #ffdcdc;
   color: white;
 }
 

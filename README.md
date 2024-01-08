@@ -1,6 +1,19 @@
 # DailyTaskLog
 - This project is a dynamic workday scheduler that leverages JavaScript, jQuery, and the Day.js library to create an interactive calendar. The scheduler displays the current day with proper date suffixes and features color-coded time blocks for past, present, and future hours. Users can input and save tasks for each hour, and the events persist between page reloads using local storage.
 
+# Usage
+Deployed project URL: 
+https://nicolesang.github.io/DailyTaskLog/
+
+These screenshots shows how the Quiz looks:
+
+![Desktop view](./assets/images/daily1.png)
+
+To add a task, begin typing in the text area beside the corresponding time. Afterward, click the save button on the right. A pop-up will appear on your screen, confirming that your task has been successfully saved and added to the localStorage.
+
+![Desktop view](./assets/images/daily2.png)
+
+The saved tasks will persist in the scheduler even after refreshing the browser. The scheduler features three shades of pink: light pink represents past hours, dark pink corresponds to the current hour, and intermediate pink indicates future tasks.
 
 
 ## License
