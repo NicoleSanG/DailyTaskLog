@@ -5,7 +5,7 @@
 Deployed project URL: 
 https://nicolesang.github.io/DailyTaskLog/
 
-These screenshots shows how the Quiz looks:
+These screenshots shows how the scheduler looks:
 
 ![Desktop view](./assets/images/daily1.png)
 
